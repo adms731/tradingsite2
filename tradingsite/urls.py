@@ -8,5 +8,5 @@ urlpatterns = [
     path("login/", views.login_page, name= "Login"),
     path("handlesignup/", views.handle_signup, name= "HandleSignup"),
     path("handlelogin/", views.handle_login, name= "HandleLogin"),
-    path("", views.handle_logout, name= "HandleLogout"),
+    path("handlelogout/", views.handle_logout, name= "HandleLogout"),
 ]
