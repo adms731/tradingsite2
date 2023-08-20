@@ -1,0 +1,56 @@
+{% extends 'tradingsite/base.html' %}
+{% load static %}
+{% block title %}
+Login | Advanced Market Solutions 
+{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'tradingsite/css/signup.css' %}">
+<link rel="stylesheet" href="{% static 'tradingsite/css/responsive.css' %}">
+<style>
+    .container::before {
+        content: '';
+        background: url("{% static 'tradingsite/images/registration.jpg' %}") no-repeat center center/cover;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: -1;
+    }
+</style>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    
+    <div class="form-container">
+        <div class="heading register-heading">
+            <h2>Login <span>For latest updates</span></h2>
+        </div>
+
+        <form method="post" action="{% url 'HandleLogin' %}" class="form">
+            {% csrf_token %}
+    
+            <div class="input-block">
+                <div class="email form-input">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <!-- <label for="email">Email</label> -->
+                </div>
+            </div>
+    
+            <div class="input-block">
+                <div class="password form-input">
+                    <input type="password" name="password" id="password" placeholder="Password">
+                    <!-- <label for="password">Password</label> -->
+                </div>
+            </div>
+            <div class="input-btn form-input">
+                <Button type="submit" class="btn btn-primary register-btn">Login</Button>
+                <a class="btn btn-secondary signup-btn" href="{% url 'Signup' %}">Signup</a>
+            </div>
+    
+    
+        </form>
+    </div>
+</div>
+{% endblock %}

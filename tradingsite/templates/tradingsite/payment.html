@@ -1,0 +1,26 @@
+{% extends 'tradingsite/base.html' %}
+{% load static %}
+{% block title %}
+Payment | Advanced Market Solutions
+{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="{% static 'tradingsite/css/payment.css' %}">
+<link rel="stylesheet" href="{% static 'tradingsite/css/responsive.css' %}">
+{% endblock %}
+
+{% block body %}
+<div class="container wrapper">
+    <div class="payment-container">
+        <div class="scan-heading">
+            <h3>Scan QR Code</h3>
+            <p>Scan to get initailized with the payment</p>
+        </div>
+        <div class="mobile">
+            <div class="qr">
+                <img src="{% static 'tradingsite/images/qr.jpg' %}" alt="QR Code">
+                <p>Scan Me</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

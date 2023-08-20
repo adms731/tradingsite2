@@ -1,0 +1,42 @@
+{% extends 'tradingsite/base.html' %}
+{% load static %}
+{% block title %}
+Home | Advanced Market Solutions
+{% endblock %}
+
+{% block body %}
+<div class="home-container">
+    <img src="{% static 'tradingsite/images/home.jpg' %}" alt="Home Image">
+
+    <div class="greeting">
+        <h2>Your journey begins with<span>Advanced Market Solutions</span> </h2>
+        <div class="down" id="down">
+            <i class="fa-solid fa-arrow-down"></i>
+        </div>
+    </div>
+</div>
+
+<div class="about-container wrapper" id="about">
+    <div class="heading">
+        <h2>Having difficulty in trading? <span>Let us assist you</span></h2>
+    </div>
+
+    <div class="about-section">
+        <img src="{% static 'tradingsite/images/handshake.jpg' %}" alt="About Image">
+        <p class="about-info">
+            Join our elite trading community and embark on a journey to become a prosperous trader in the Forex
+            market. Unleash your potential to read charts like never before. Gain access to premium trade setups,
+            allowing you to earn while honing your skills and knowledge.
+        </p>
+    </div>
+</div>
+
+<div class="package-container wrapper">
+    <div class="heading">
+        <h2 class="package-font-color">Packages<span class="package-sm">We provide</span></h2>
+    </div>
+
+    <div class="package-section">
+    </div>
+</div>
+{% endblock %}

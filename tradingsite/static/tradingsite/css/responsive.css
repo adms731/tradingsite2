@@ -1,0 +1,660 @@
+@media screen and (max-width: 800px) {
+    .wrapper {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .nav-btns {
+        /* opacity: 0; */
+        position: absolute;
+        top: -180px;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1em;
+        padding: 2em;
+        backdrop-filter: blur(5px);
+        flex-direction: column;
+        transition: all .3s ease-in-out;
+        z-index: -1;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .nav-btns-active {
+        top: 0;
+        opacity: 1;
+    }
+
+    .res-primary{
+        background-color: var(--primary);
+        color: var(--accent);
+        width: 100%;
+    }
+
+    .res-secondary{
+        border: 1px solid var(--primary);
+        color: var(--primary);
+        width: 100%;
+
+    }
+
+    .actions .btn {
+        width: 100%;
+    }
+
+    .bar {
+        display: block;
+    }
+
+    .home-container .greeting {
+        row-gap: 1.8em;
+    }
+
+    .home-container .greeting h2 {
+        font-size: 1rem
+    }
+
+    .home-container .greeting h2 span {
+        font-size: 2rem;
+    }
+
+    .down i {
+        font-size: 1.4rem;
+        position: relative;
+        z-index: 10;
+    }
+
+    .heading {
+        /* background-color: pink; */
+        width: 100%;
+    }
+
+    .heading h2 {
+        font-size: 2rem;
+    }
+
+    .heading h2 span {
+        font-size: 1rem;
+    }
+
+    .about-section {
+        column-gap: 3.5em;
+    }
+
+    .about-container p {
+        font-size: 1rem;
+        line-height: 25px;
+    }
+
+}
+
+@media screen and (max-width: 620px) {
+
+    .wrapper {
+        padding-left: 1.2em;
+        padding-right: 1.2em;
+    }
+
+    nav {
+        padding: .8em;
+    }
+
+    nav .logo {
+        font-size: 1rem;
+    }
+
+    nav .bar i {
+        font-size: .9rem;
+    }
+
+    .home-container .greeting {
+        row-gap: 1.8em;
+    }
+
+    .home-container .greeting h2 {
+        font-size: .8rem
+    }
+
+    .home-container .greeting h2 span {
+        font-size: 1.5rem;
+    }
+
+    .down {
+        padding: .8em;
+        border-radius: 8px;
+    }
+
+    .down i {
+        font-size: 1rem;
+    }
+
+    .heading {
+        margin-bottom: 1em;
+    }
+
+    .heading h2 {
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+    }
+
+    .heading h2 span {
+        font-size: .7rem;
+    }
+
+    .about-container,
+    .package-container,
+    .footer-container {
+        row-gap: 2em;
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+
+    .about-container img {
+        border-radius: 10px;
+    }
+
+    .about-section {
+        column-gap: 3.5em;
+    }
+
+    .about-container p {
+        font-size: .8rem;
+        line-height: 20px;
+    }
+
+    .package-section .card {
+        padding: 1.5em;
+    }
+
+    .package-section .card h4 {
+        font-size: 1rem;
+    }
+
+    .package-section .card .price {
+        font-size: .9rem;
+    }
+
+    .package-section .card .duration {
+        font-size: .8rem;
+    }
+
+    .package-act button {
+        font-size: .9rem;
+    }
+
+    .package-section p {
+        font-size: .8rem;
+        line-height: 18px;
+    }
+
+    .footer-container {
+        row-gap: 1em;
+    }
+
+    .footer-container .letter-mark {
+        font-size: 1.2rem;
+    }
+
+    .footer-container .short-info,
+    .footer-container .disclaimer {
+        font-size: .8rem;
+        line-height: 18px;
+    }
+
+    footer {
+        font-size: .8rem;
+    }
+
+    .form-container {
+        padding: 2em;
+        width: 80%;
+    }
+
+    .input-block {
+        row-gap: 1em;
+        flex-direction: column;
+    }
+
+    .form-input input {
+        font-size: .8rem;
+        border-radius: 8px;
+    }
+
+    .register-btn {
+        font-size: .8rem;
+    }
+
+    .payment-container{
+        padding: 2em;
+    }
+
+    .mobile{
+        padding: 3em 1em;
+    }
+
+    .scan-heading h3{
+        font-size: 1.5rem;
+    }
+
+    .scan-heading p{
+        font-size: .7rem;
+    }
+
+}
+
+
+@media screen and (max-width: 450px) {
+
+    .wrapper {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    nav {
+        padding: .6em;
+    }
+
+    nav .logo {
+        font-size: .8rem;
+    }
+
+    nav .bar i {
+        font-size: .9rem;
+    }
+
+    .home-container .greeting {
+        row-gap: 1.2em;
+    }
+
+    .home-container .greeting h2 {
+        font-size: .5rem;
+        letter-spacing: 4px;
+    }
+
+    .home-container .greeting h2 span {
+        font-size: 1.2rem;
+        border-radius: 8px;
+    }
+
+    .down {
+        padding: .6em;
+        border-radius: 6px;
+    }
+
+    .down i {
+        font-size: .8rem;
+    }
+
+    .heading h2 {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .heading h2 span {
+        font-size: .6rem;
+    }
+
+    .about-container,
+    .package-container,
+    .footer-container {
+        row-gap: 1em;
+        padding-top: 2.5em;
+        padding-bottom: 2.5em;
+    }
+
+    .about-container img {
+        border-radius: 8px;
+    }
+
+    .about-section {
+        column-gap: 1.8em;
+    }
+
+    .about-container p {
+        font-size: .65rem;
+        line-height: 15px;
+    }
+
+    .package-act button {
+        font-size: .75rem;
+    }
+
+    .package-section p {
+        font-size: .65rem;
+        line-height: 15px;
+    }
+
+    .footer-container {
+        row-gap: .8em;
+    }
+
+    .footer-container .letter-mark,
+    .footer-container .disclaimer span {
+        font-size: .9rem;
+    }
+
+    .footer-container .short-info,
+    .footer-container .disclaimer {
+        font-size: .65rem;
+        line-height: 15px;
+    }
+
+    footer {
+        font-size: .6rem;
+    }
+
+    .form-container {
+        padding: 1.5em;
+        width: 80%;
+    }
+
+    .form {
+        flex-direction: column;
+        row-gap: .8em;
+    }
+
+    .input-block {
+        row-gap: .8em;
+        flex-direction: column;
+    }
+
+    .form-input input {
+        font-size: .7rem;
+        border-radius: 8px;
+    }
+
+    .register-btn,
+    .input-btn a {
+        font-size: .7rem;
+    }
+
+    .payment-container{
+        padding: 1.5em;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        row-gap: 1em;
+    }
+
+    .mobile{
+        padding: 3em 1em;
+    }
+
+    .scan-heading h3{
+        font-size: 1.5rem;
+    }
+
+    .scan-heading p{
+        font-size: .7rem;
+    }
+
+    .mobile .qr p{
+        font-size: .8rem;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+
+    nav {
+        padding: .4em;
+    }
+
+    .home-container .greeting {
+        row-gap: 1em;
+    }
+
+    .home-container .greeting h2 {
+        font-size: .5rem;
+        letter-spacing: 3px;
+    }
+
+    .home-container .greeting h2 span {
+        font-size: 1rem;
+        border-radius: 8px;
+    }
+
+    .down {
+        padding: .5em;
+    }
+
+    .down i {
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width: 310px) {
+
+    .wrapper {
+        padding-left: .8em;
+        padding-right: .8em;
+    }
+
+    nav {
+        padding: .2em;
+    }
+
+    nav .logo {
+        font-size: .6rem;
+    }
+
+    nav .bar i {
+        font-size: .7rem;
+    }
+
+    .home-container .greeting {
+        row-gap: .8em;
+    }
+
+    .home-container .greeting h2 {
+        font-size: .5rem;
+        letter-spacing: 2px;
+    }
+
+    .home-container .greeting h2 span {
+        font-size: .8rem;
+        border-radius: 5px;
+    }
+
+    .down {
+        padding: .3em .4em;
+    }
+
+    .down i {
+        font-size: .6rem;
+    }
+
+    .heading h2 {
+        font-size: .8rem;
+        letter-spacing: 1px;
+    }
+
+    .heading h2 span {
+        font-size: .4rem;
+    }
+
+    .about-container,
+    .package-container,
+    .footer-container {
+        row-gap: .8em;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+    }
+
+    .about-container img {
+        border-radius: 5px;
+    }
+
+    .about-section {
+        column-gap: 1.2em;
+    }
+
+    .about-container p {
+        font-size: .45rem;
+        line-height: 10px;
+    }
+
+    .package-section .card {
+        padding: 1em 1.2em;
+        border-radius: 10px;
+    }
+
+    .package-section .card h4 {
+        font-size: .8rem;
+    }
+
+    .package-section .card .price {
+        font-size: .7rem;
+    }
+
+    .package-section .card .duration {
+        font-size: .65rem;
+    }
+
+    .package-act {
+        margin-top: .15em;
+    }
+
+    .package-act button {
+        font-size: .5rem;
+    }
+
+    .package-section p {
+        font-size: .5rem;
+        line-height: 10px;
+    }
+
+    .footer-container {
+        row-gap: .5em;
+    }
+
+    .footer-container .letter-mark,
+    .footer-container .disclaimer span {
+        font-size: .8rem;
+        letter-spacing: 0px;
+    }
+
+    .footer-container .short-info,
+    .footer-container .disclaimer {
+        font-size: .5rem;
+        line-height: 11px;
+    }
+
+    footer {
+        font-size: .5rem;
+    }
+}
+
+@media screen and (max-width: 255px) {
+
+    nav {
+        padding: .1em;
+    }
+
+    nav .logo {
+        font-size: .45rem;
+    }
+
+    nav .bar i {
+        font-size: .6rem;
+    }
+
+    .home-container .greeting {
+        row-gap: .8em;
+    }
+
+    .home-container .greeting h2 {
+        font-size: .4rem;
+        letter-spacing: 1px;
+    }
+
+    .home-container .greeting h2 span {
+        font-size: .6rem;
+        border-radius: 5px;
+    }
+
+    .down {
+        padding: .2em .4em;
+    }
+
+    .down i {
+        font-size: .5rem;
+    }
+
+    .heading h2 {
+        font-size: .6rem;
+        letter-spacing: 1px;
+    }
+
+    .heading h2 span {
+        font-size: .3rem;
+    }
+
+    .about-container,
+    .package-container,
+    .footer-container {
+        row-gap: .6em;
+    }
+
+    .about-container img {
+        border-radius: 5px;
+    }
+
+    .about-section {
+        column-gap: 1.2em;
+    }
+
+    .about-container p {
+        font-size: .35rem;
+        line-height: 8px;
+    }
+
+    .package-section .card {
+        padding: 1em 1.2em;
+        border-radius: 10px;
+    }
+
+    .package-section .card h4 {
+        font-size: .6rem;
+    }
+
+    .package-section .card .price {
+        font-size: .5rem;
+    }
+
+    .package-section .card .duration {
+        font-size: .55rem;
+    }
+
+    .package-act {
+        margin-top: .15em;
+    }
+
+    .package-act button {
+        font-size: .5rem;
+    }
+
+    .package-section p {
+        font-size: .4rem;
+        line-height: 8px;
+    }
+
+    .footer-container .letter-mark,
+    .footer-container .disclaimer span {
+        font-size: .7rem;
+        letter-spacing: 0px;
+    }
+
+    .footer-container .short-info,
+    .footer-container .disclaimer {
+        font-size: .4rem;
+        line-height: 9px;
+    }
+
+    footer {
+        font-size: .45rem;
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Unlock Your Trading Potential with Our Comprehensive Platform! Explore expert insights, real-time market analysis, and powerful tools for successful trading. Join now for a strategic edge in stocks, forex, cryptocurrencies, and more.">
+    {% load static %}
+    <title>
+        {% block title %}
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" type="text/css" href="{% static 'tradingsite/css/style.css'%}">
+    <link rel="stylesheet" href="{% static 'tradingsite/css/responsive.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    {% block head %}
+    {% endblock %}
+</head>
+
+<body>
+    <nav class="navbar wrapper" id="navbar">
+        <div class="logo">
+            <a id="logo" href="{% url 'Home' %}">Advanced Market Solution</a>
+        </div>
+        <div class="cta">
+
+            <div class="bar">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="actions nav-btns">
+                {% if user.is_authenticated %}
+                <div class="profile">
+                    <div class="user">
+                        <i class="fa-solid fa-user"></i>
+                        <h5 class="username">{{user.email}}</h5>
+                    </div>
+                    <div class="logout logout-inactive">
+                        <a href="{% url 'HandleLogout' %}">Logout</a>
+                    </div>
+                </div>
+    
+                {% else %}
+                
+                <a href="{% url 'Login' %}"><button class="btn btn-secondary res-secondary" id="login" type="submit">Login</button></a>
+                <a href="{% url 'Signup' %}"><button class="btn btn-primary res-primary" id="register"
+                        type="submit">Register</button></a>
+                {% endif %}
+    
+            </div>
+        </div>
+    </nav>
+
+    {% block body %}
+    {% endblock %}
+
+    <div class="footer-container wrapper">
+        <h3 class="letter-mark">
+            Advanced Market Solutions
+        </h3>
+        <p class="short-info">
+            Join our team of experienced traders dedicated to guiding you towards a successful trading journey. With
+            over a decade of expertise in Forex, Cryptocurrency, and CFD markets, we'll support you in making profitable
+            investment decisions and growing your wealth.
+        </p>
+        <p class="disclaimer">
+            <span>Disclaimer:</span> Investments are subject to market risk. Please read all the documents carefully
+            before investing.
+        </p>
+    </div>
+
+    <footer>
+        2023 &copy; Copyright Advanced Market Solutions
+    </footer>
+
+    <script src="{% static 'tradingsite/js/script.js' %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+{% extends 'tradingsite/base.html' %}
+{% load static %}
+{% block title %}
+Signup | Advanced Market Solutions 
+{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'tradingsite/css/signup.css' %}">
+<link rel="stylesheet" href="{% static 'tradingsite/css/responsive.css' %}">
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    
+    <div class="form-container">
+        <div class="heading register-heading">
+            <h2>Signup <span>For latest updates</span></h2>
+        </div>
+
+        <form method="post" action="{% url 'HandleSignup' %}" class="form">
+            {% csrf_token %}
+    
+            <div class="input-block">
+                <div class="name form-input">
+                    <input type="text" name="name" id="name" placeholder="Name">
+                    <!-- <label for="name">Name</label> -->
+                </div>
+                
+                <div class="email form-input">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <!-- <label for="email">Email</label> -->
+                </div>
+            </div>
+    
+            <div class="input-block">
+                <div class="password form-input">
+                    <input type="password" name="password" id="password" placeholder="Password">
+                    <!-- <label for="password">Password</label> -->
+                </div>
+                
+                <div class="password form-input">
+                    <input type="password" name="cPassword" id="password" placeholder="Confirm Password">
+                    <!-- <label for="password">Confirm Password</label> -->
+                </div>    
+            </div>
+            <div class="input-btn form-input">
+                <Button type="submit" class="btn btn-primary register-btn">Signup</Button>
+                <a class="al-registered" href="{% url 'Login' %}">Already registered?</a>
+            </div>
+    
+    
+        </form>
+    </div>
+</div>
+
+{% endblock %}
